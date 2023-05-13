@@ -19,8 +19,9 @@ class MainActivity : AppCompatActivity() {
         tvMoves = findViewById(R.id.tvNumMoves)
         tvPairs = findViewById(R.id.tvNumPairs)
 
-//        rvBoard.adapter = MemoryBoardAdapter(this,8)
-        
+        rvBoard.adapter = MemoryBoardAdapter(this,8)
+        rvBoard.setHasFixedSize(true)
+
         rvBoard.layoutManager = GridLayoutManager(this,2)
     }
 }
